@@ -7,13 +7,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="160" d:DesignWidth="300">
     <Grid>
-        <TextBox x:Name="tbUsuario" HorizontalAlignment="Left" Height="23" Margin="87,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
-        <TextBox x:Name="tbContrasenya" HorizontalAlignment="Left" Height="23" Margin="87,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
-        <Label x:Name="lblUsuario" Content="Usuario:" HorizontalAlignment="Left" Margin="29,45,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblTitulo" Content="Inicio sesión" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblContrasenya" Content="Contraseña:" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="215,131,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnIniciarSesion" Content="Iniciar sesión" HorizontalAlignment="Left" Margin="135,131,0,0" VerticalAlignment="Top" Width="75"/>
 
+            <TextBox x:Name="tbUsuario" Margin="87,48,10,89" TextWrapping="Wrap"/>
+            <TextBox x:Name="tbContrasenya" Height="23" Margin="87,89,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label x:Name="lblUsuario" Content="Usuario:" Margin="29,45,218,89"/>
+            <Label x:Name="lblTitulo" Content="Inicio sesión" Margin="120,10,105,0" Height="26" VerticalAlignment="Top"/>
+            <Label x:Name="lblContrasenya" Content="Contraseña:" Margin="10,86,0,48" HorizontalAlignment="Left" Width="72"/>
+            <Button x:Name="btnCancelar" Content="Cancelar" Margin="215,131,10,10"/>
+            <Button x:Name="btnLogin" Content="Iniciar sesión" Margin="135,131,90,10" Click="onClickLogin"/>
+      
     </Grid>
 </UserControl>
