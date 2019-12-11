@@ -31,17 +31,6 @@ namespace User_Control
         }
         #endregion
 
-        public static readonly string usuario = "Cristhian";
-        public static readonly string contrasenya = "02mK2d%s";
-
-        public static readonly System.Windows.RoutedEvent ReturnIdentifyLogin
-            = System.Windows.EventManager.RegisterRoutedEvent(
-                "Identify Login",
-                RoutingStrategy.Bubble,
-                typeof(RoutedEventHandler),
-                typeof(LoginPanel)
-                );
-
         public LoginPanel()
         {
             InitializeComponent();
@@ -65,19 +54,7 @@ namespace User_Control
 
         private void onClickLogin(object sender, RoutedEventArgs e)
         {
-            bool validado = false;
-            string input;
 
-            if (tbUsuario.Text.Equals(usuario))
-            {
-                input = Hash(tbContrasenya.Text);
-
-                if (input == contrasenya)
-                {
-                    validado = true;
-                }
-                
-            }
         }
     }
 }
