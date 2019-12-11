@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\User-Control\Login-Panel.csproj">
+      <Project>{E616AD49-5D0E-42D1-B514-C632C51B2FB4}</Project>
+      <Name>Login-Panel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
