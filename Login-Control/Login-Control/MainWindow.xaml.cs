@@ -24,5 +24,10 @@ namespace Login_Control
         {
             InitializeComponent();
         }
+
+        private void LoginPanel_LoginIn(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
