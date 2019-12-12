@@ -38,8 +38,9 @@ namespace User_Control
         #endregion
 
         public LoginResult _result;
-        public string _login;
-        public string _password;
+
+        public readonly string _login = "Cristhian";
+        public readonly string _password = "03mr7s10";
 
         public LoginResult Result
         {
@@ -53,8 +54,7 @@ namespace User_Control
             }
         }
 
-        [Category("Inicio sesión")]
-        public string Login
+        /*public string Login
         {
             get
             {
@@ -66,7 +66,6 @@ namespace User_Control
             }
         }
 
-        [Category("Inicio sesión")]
         public string Password
         {
             get
@@ -77,14 +76,15 @@ namespace User_Control
             {
                 _login = value;
             }
-        }
+        } 
 
         /**
          * Registro del evento enrutado en el
          * EventManager, al que se le pasa nombre, propagación, 
          * tipo y propietario.
          * */
-        public static readonly RoutedEvent LoginInEvent =
+
+        public static readonly RoutedEvent LoginInSuccessEvent =
             EventManager.RegisterRoutedEvent(
                 "LoginInEvent",
                 RoutingStrategy.Bubble,
@@ -100,11 +100,11 @@ namespace User_Control
         {
             add
             {
-                AddHandler(LoginInEvent, value);
+                AddHandler(LoginInSuccessEvent, value);
             }
             remove
             {
-                RemoveHandler(LoginInEvent, value);
+                RemoveHandler(LoginInSuccessEvent, value);
             }
         }
 
@@ -112,10 +112,10 @@ namespace User_Control
          * Metodo que lanzará el evento
          * @return void
          * */
-        void RaisesLoginInEvent()
+        void RaisesLoginInSuccessEvent()
         {
             RoutedEventArgs args =
-                new RoutedEventArgs(LoginPanel.LoginInEvent);
+                new RoutedEventArgs(LoginInSuccessEvent);
             RaiseEvent(args);
         }
 
@@ -146,17 +146,41 @@ namespace User_Control
             {
                 if (Hash(tbContrasenya.Text).Equals(Hash(_password)))
                 {
+                    RaisesLoginInSuccessEvent();
                     _result = LoginResult.Ok;
                 }
                 else _result = LoginResult.Fail;
                 
             }
             else _result = LoginResult.Fail;
+
+            checkLoginIn();            
+      
         }
 
         private void onClickCancelar(object sender, RoutedEventArgs e)
         {
             _result = LoginResult.Canceled;
+
+            checkLoginIn();
+        }
+
+        private void checkLoginIn()
+        {
+            switch (_result)
+            {
+                case LoginResult.Ok:
+                    MessageBox.Show("Contraseña correcta");
+                    break;
+                case LoginResult.Canceled:
+                    MessageBox.Show("Operación cancelada");
+                    break;
+                case LoginResult.Fail:
+                    MessageBox.Show("Contraseña incorrecta");
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
