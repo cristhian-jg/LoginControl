@@ -41,6 +41,18 @@ namespace User_Control
         public string _login;
         public string _password;
 
+        public LoginResult Result
+        {
+            get
+            {
+                return _result;
+            }
+            set
+            {
+                _result = value;
+            }
+        }
+
         [Category("Inicio sesión")]
         public string Login
         {
