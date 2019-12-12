@@ -9,7 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <User_Control:LoginPanel Margin="224,118,237.6,124" Login="Cristhian" Password="14091998" Loaded="LoginPanel_Loaded" LoginIn="LoginPanel_LoginIn" />
+        <User_Control:LoginPanel Margin="224,118,237.6,124" />
 
     </Grid>
 </Window>
