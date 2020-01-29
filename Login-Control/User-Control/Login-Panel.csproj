@@ -80,5 +80,15 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HashGenerator\HashGenerator.csproj">
+      <Project>{dadc52a6-d835-42c4-918f-2ab66d836c5f}</Project>
+      <Name>HashGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{8F3F485B-DA15-41FE-AFDD-FD00B9901402}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

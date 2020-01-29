@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login-Control", "Login-Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login-Panel", "User-Control\Login-Panel.csproj", "{E616AD49-5D0E-42D1-B514-C632C51B2FB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{8F3F485B-DA15-41FE-AFDD-FD00B9901402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashGenerator", "HashGenerator\HashGenerator.csproj", "{DADC52A6-D835-42C4-918F-2AB66D836C5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{E616AD49-5D0E-42D1-B514-C632C51B2FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E616AD49-5D0E-42D1-B514-C632C51B2FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E616AD49-5D0E-42D1-B514-C632C51B2FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F3F485B-DA15-41FE-AFDD-FD00B9901402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F3F485B-DA15-41FE-AFDD-FD00B9901402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F3F485B-DA15-41FE-AFDD-FD00B9901402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F3F485B-DA15-41FE-AFDD-FD00B9901402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADC52A6-D835-42C4-918F-2AB66D836C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADC52A6-D835-42C4-918F-2AB66D836C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADC52A6-D835-42C4-918F-2AB66D836C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADC52A6-D835-42C4-918F-2AB66D836C5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

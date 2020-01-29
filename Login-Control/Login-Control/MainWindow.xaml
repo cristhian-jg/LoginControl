@@ -7,9 +7,9 @@
         xmlns:User_Control="clr-namespace:User_Control;assembly=User-Control" x:Class="Login_Control.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Viewbox Margin="-476,-423,-441,-395" MinWidth="650" MinHeight="650">
 
-        <User_Control:LoginPanel Margin="224,118,237.6,124" />
+        <User_Control:LoginPanel Height="50" Width="0"/>
 
-    </Grid>
+    </Viewbox>
 </Window>
